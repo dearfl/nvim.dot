@@ -41,6 +41,11 @@ keymap("n", "<Right>", ":bprevious<CR>", opts)
 keymap("n", "<Up>", "<nop>", opts)
 keymap("n", "<Down>", "<nop>", opts)
 
+keymap("i", "<Up>", "<nop>", opts)
+keymap("i", "<Down>", "<nop>", opts)
+keymap("i", "<Left>", "<nop>", opts)
+keymap("i", "<Right>", "<nop>", opts)
+
 -- double leader switch buffer
 -- TODO: not working rightnow
 keymap("n", "<leader><leader>", "<c-^>", opts)
