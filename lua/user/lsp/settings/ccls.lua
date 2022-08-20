@@ -1,4 +1,3 @@
 return {
-  settings = {
-  },
+  filetypes = { "c", "cpp", "h", "hpp", "cc" },
 }
