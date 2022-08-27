@@ -37,6 +37,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<Left>", ":bnext<CR>", opts)
 keymap("n", "<Right>", ":bprevious<CR>", opts)
 
+keymap("n", "Y", "y$", opts)
+
 -- Disable arrow keys --- force yourself to use the home row
 keymap("n", "<Up>", "<nop>", opts)
 keymap("n", "<Down>", "<nop>", opts)
