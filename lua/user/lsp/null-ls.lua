@@ -18,8 +18,8 @@ null_ls.setup({
     -- formatting.clang_format,
     formatting.rustfmt,
     diagnostics.trail_space,
-    diagnostics.cppcheck,
-    diagnostics.flake8,
+    diagnostics.cppcheck.with({ extra_args = { "--std=c++20", "--language=c++" } }),
+    diagnostics.flake8.with({ extra_args = { "--max-line-length=120" } }),
     -- not needed
     -- diagnostics.shellcheck,
     -- diagnostics.luacheck,
