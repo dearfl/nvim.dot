@@ -12,7 +12,6 @@ local vsc_loader = require("luasnip/loaders/from_vscode")
 
 -- lazy load vscode format snippets
 vsc_loader.lazy_load()
--- vsc_loader.lazy_load({ paths = { "~/.config/nvim/snippets" }})
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1
