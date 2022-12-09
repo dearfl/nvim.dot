@@ -13,13 +13,19 @@ null_ls.setup({
   sources = {
     -- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
     -- formatting.black.with({ extra_args = { "--fast" } }),
-    formatting.autopep8.with({ extra_args = { "--max-line-length=120" } }),
+    formatting.autopep8,
+    formatting.isort,
+    formatting.black,
     -- already have ccls
     -- formatting.clang_format,
     formatting.rustfmt,
     diagnostics.trail_space,
     diagnostics.cppcheck.with({ extra_args = { "--std=c++20", "--language=c++" } }),
-    diagnostics.flake8.with({ extra_args = { "--max-line-length=120" } }),
+    diagnostics.flake8,
+    diagnostics.mypy,
+    diagnostics.pylint,
+    diagnostics.pycodestyle,
+    -- diagnostics.pyproject_flake8,
     -- not needed
     -- diagnostics.shellcheck,
     -- diagnostics.luacheck,
