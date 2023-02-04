@@ -18,13 +18,13 @@ null_ls.setup({
     formatting.black,
     -- already have ccls
     -- formatting.clang_format,
-    formatting.rustfmt,
+    -- formatting.rustfmt,
     diagnostics.trail_space,
     diagnostics.cppcheck.with({ extra_args = { "--std=c++20", "--language=c++" } }),
     diagnostics.flake8,
-    diagnostics.mypy,
+    -- diagnostics.mypy,
     diagnostics.pylint,
-    diagnostics.pycodestyle,
+    -- diagnostics.pycodestyle,
     -- diagnostics.pyproject_flake8,
     -- not needed
     -- diagnostics.shellcheck,
