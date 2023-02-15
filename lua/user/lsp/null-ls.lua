@@ -20,7 +20,7 @@ null_ls.setup({
     -- formatting.clang_format,
     -- formatting.rustfmt,
     diagnostics.trail_space,
-    diagnostics.cppcheck.with({ extra_args = { "--std=c++20", "--language=c++" } }),
+    -- diagnostics.cppcheck.with({ extra_args = { "--std=c++20", "--language=c++" } }),
     diagnostics.flake8,
     -- diagnostics.mypy,
     diagnostics.pylint,
