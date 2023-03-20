@@ -14,6 +14,33 @@ M.general = {
 
 M.telescope = {}
 
+M.nvterm = {
+  plugin = true,
+
+  t = {
+    -- toggle in terminal mode
+    ["<C-\\>"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "toggle floating term",
+    },
+
+  },
+
+  n = {
+    -- toggle in normal mode
+    ["<C-\\>"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "toggle floating term",
+    },
+
+  },
+}
+
+
 M.whichkey = {}
 
 M.lspconfig = {
