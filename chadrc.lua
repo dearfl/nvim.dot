@@ -16,15 +16,14 @@ M.ui = {
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
     separator_style = "default",
-    overriden_modules = nil,
   },
 
 }
 
 M.plugins = "custom.plugins"
-M.options = require "custom.options"
 
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
+M.options = require "custom.options"
 return M

@@ -30,7 +30,7 @@ M.treesitter = {
   indent = {
     enable = true,
     disable = {
-      "python"
+      "python",
     },
   },
 }

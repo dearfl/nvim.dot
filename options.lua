@@ -24,7 +24,6 @@ local g_opt = {
   pumheight = 12, -- pop up menu height
   showmode = false, -- we don't need to see things like -- INSERT -- anymore
   showtabline = 0, -- always show tabs
-  smartindent = true, -- make indenting smarter again
   splitbelow = true, -- force all horizontal splits to go below current window
   splitright = true, -- force all vertical splits to go to the right of current window
   swapfile = false, -- creates a swapfile
@@ -33,9 +32,6 @@ local g_opt = {
   undofile = true, -- enable persistent undo
   updatetime = 300, -- faster completion (4000ms default)
   writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-  expandtab = true, -- convert tabs to spaces
-  shiftwidth = 4, -- the number of spaces inserted for each indentation
-  tabstop = 4, -- insert 2 spaces for a tab
   cursorline = true, -- highlight the current line
   number = true, -- set numbered lines
   relativenumber = true, -- set relative numbered lines
@@ -45,6 +41,13 @@ local g_opt = {
   scrolloff = 8, -- is one of my fav, keep minimal lines when scroll to the edge
   sidescrolloff = 8,
   -- guifont = "Hack:h17", -- the font used in graphical neovim applications
+
+  -- Indenting
+  expandtab = true, -- convert tabs to spaces
+  smartindent = true, -- make indenting smarter again
+  tabstop = 4, -- insert 4 spaces for a tab
+  softtabstop = 4,
+  shiftwidth = 4, -- the number of spaces inserted for each indentation
 }
 
 vim.opt.shortmess:append "sI"
