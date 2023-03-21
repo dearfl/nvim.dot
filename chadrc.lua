@@ -17,7 +17,6 @@ M.ui = {
     -- round and block will work for minimal theme only
     separator_style = "default",
   },
-
 }
 
 M.plugins = "custom.plugins"
@@ -25,5 +24,5 @@ M.plugins = "custom.plugins"
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
-M.options = require "custom.options"
+-- M.options = require "custom.options"
 return M
