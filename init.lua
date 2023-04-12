@@ -2,6 +2,7 @@ local g_vars = {
   -- lang specific
   python_recommended_style = 0,
   rust_recommended_style = 0,
+  -- loaded_python3_provider = 1,
 
   -- use lua filedetect
   transparency = true,

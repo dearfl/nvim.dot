@@ -17,6 +17,7 @@ lspconfig.clangd.setup {
   capabilities = capabilities,
   cmd = {
     "clangd",
+    "--offset-encoding=utf-16",
     "--background-index",
     "-j=8",
     "--query-driver=/usr/bin/**/clang-*,/bin/clang,/bin/clang++,/usr/bin/gcc,/usr/bin/g++",

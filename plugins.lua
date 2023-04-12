@@ -113,6 +113,116 @@ local plugins = {
     end,
   },
 
+  {
+    "folke/noice.nvim",
+    lazy = false,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+    config = function()
+      require("noice").setup {
+        lsp = {
+          -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
+          override = {
+            ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+            ["vim.lsp.util.stylize_markdown"] = true,
+            ["cmp.entry.get_documentation"] = true,
+          },
+          hover = {
+            enabled = false,
+          },
+          signature = {
+            enabled = false,
+          },
+        },
+        -- you can enable a preset for easier configuration
+        presets = {
+          bottom_search = true, -- use a classic bottom cmdline for search
+          command_palette = true, -- position the cmdline and popupmenu together
+          long_message_to_split = true, -- long messages will be sent to a split
+          inc_rename = false, -- enables an input dialog for inc-rename.nvim
+          lsp_doc_border = false, -- add a border to hover docs and signature help
+        },
+        cmdline = {
+          view = "cmdline",
+        },
+      }
+    end,
+  },
+
+  {
+    "folke/trouble.nvim",
+    event = "LspAttach",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("trouble").setup {}
+    end,
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    event = "BufEnter",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("todo-comments").setup {}
+    end,
+  },
+
+  {
+    "weilbith/nvim-code-action-menu",
+    cmd = "CodeActionMenu",
+    event = "LspAttach",
+    -- config = function()
+    --   require("nvim-code-action-menu").setup {}
+    -- end,
+  },
+
+  {
+    "mfussenegger/nvim-dap",
+    event = "BufEnter",
+    -- config = function()
+    --   require("nvim-dap").setup {}
+    -- end,
+  },
+
+  {
+    "ggandor/leap.nvim",
+    event = "BufEnter",
+    config = function()
+      require("leap").setup {}
+    end,
+  },
+
+  {
+    "glepnir/lspsaga.nvim",
+    event = "LspAttach",
+    config = function()
+      require("lspsaga").setup {}
+    end,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
+
+  {
+    "skywind3000/asyncrun.vim",
+    event = "CmdLineEnter",
+  },
+
+  {
+    "neanias/everforest-nvim",
+    lazy = false,
+    config = function()
+      require("everforest").setup {}
+    end,
+  },
+
   -- {
   --   "nvim-lualine/lualine.nvim"
   -- }
