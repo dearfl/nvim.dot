@@ -56,6 +56,14 @@ local plugins = {
     opts = overrides.blankline,
   },
 
+  {
+    "NMAC427/guess-indent.nvim",
+    event = "BufEnter",
+    config = function()
+      require("guess-indent").setup {}
+    end,
+  },
+
   -- {
   --   "nvim-lualine/lualine.nvim"
   -- }

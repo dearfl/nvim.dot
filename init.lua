@@ -5,7 +5,6 @@ local g_vars = {
 
   -- use lua filedetect
   transparency = true,
-
 }
 
 local g_opt = {
@@ -45,9 +44,9 @@ local g_opt = {
   -- Indenting
   expandtab = true, -- convert tabs to spaces
   smartindent = true, -- make indenting smarter again
-  tabstop = 4, -- insert 4 spaces for a tab
-  softtabstop = 4,
-  shiftwidth = 4, -- the number of spaces inserted for each indentation
+  -- tabstop = 4, -- insert 4 spaces for a tab
+  -- softtabstop = 4,
+  -- shiftwidth = 4, -- the number of spaces inserted for each indentation
 }
 
 vim.opt.shortmess:append "sI"
